@@ -22,3 +22,5 @@ yarn-error.log*
 
 # User-specific stuff:
 .idea/
+/app/thumbnail/
+/app/video/

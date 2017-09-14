@@ -1,0 +1,325 @@
+{
+  "header": [
+    {
+      "path": "commercials",
+      "label": "commercials"
+    },
+    {
+      "path": "projects",
+      "label": "projects + credits"
+    },
+    {
+      "path": "reels",
+      "label": "reels"
+    },
+    {
+      "path": "slideshow",
+      "label": "slide show"
+    },
+    {
+      "path": "about",
+      "label": "about"
+    }
+  ],
+  "footer": [
+    {
+      "name": "Johannes Spalt"
+    },
+    {
+      "title": "Production Design"
+    },
+    {
+      "email": "spalt@me.com"
+    },
+    {
+      "phone": "213-399-3667"
+    }
+  ],
+  "section": [
+    {
+      "path": "commercials",
+      "items": [
+        {
+          "title": "Heartgard",
+          "thumbnail": "thumbnail/Iheartguard.jpg",
+          "video": "video/Iheartguard.mp4"
+        },
+        {
+          "title": "Blesomra",
+          "thumbnail": "thumbnail/belsomra.jpg",
+          "video": "video/belsomra.mp4"
+        },
+        {
+          "title": "Bank Of America",
+          "thumbnail": "thumbnail/BofA.jpg",
+          "video": "video/BofA.mp4"
+        },
+        {
+          "title": "Chevy Cruze",
+          "thumbnail": "thumbnail/ChevyCruze.jpg",
+          "video": "video/ChevyCruze.mp4"
+        },
+        {
+          "title": "Di Giorno",
+          "thumbnail": "thumbnail/DiGiorno.jpg",
+          "video": "video/DiGiorno.mp4"
+        },
+        {
+          "title": "Audi",
+          "thumbnail": "thumbnail/Audi.jpg",
+          "video": "video/Audi.mp4"
+        },
+        {
+          "title": "Infinity",
+          "thumbnail": "thumbnail/infinity.jpg",
+          "video": "video/infinity.mp4"
+        },
+        {
+          "title": "Turbo Tax",
+          "thumbnail": "thumbnail/turbo_tax.jpg",
+          "video": "video/turbo_tax.mp4"
+        },
+        {
+          "title": "McDonalds",
+          "thumbnail": "thumbnail/McDonalds.jpg",
+          "video": "video/McDonalds.mp4"
+        },
+        {
+          "title": "Sprint",
+          "thumbnail": "thumbnail/Sprint_NeverChange_30.jpg",
+          "video": "video/Sprint_NeverChange_30.mp4"
+        },
+        {
+          "title": "Telemundo",
+          "thumbnail": "thumbnail/telemundo.jpg",
+          "video": "video/telemundo.mp4"
+        },
+        {
+          "title": "VW",
+          "thumbnail": "thumbnail/VW.jpg",
+          "video": "video/VW.mp4"
+        }
+      ]
+    },
+    {
+      "path": "projects",
+      "items": [
+        {
+          "section": "commercials",
+          "items": [
+            {
+              "p": [
+                "Audi A5, R8"
+              ]
+            },
+            {
+              "p": [
+                "Fiat 500"
+              ]
+            },
+            {
+              "p": [
+                "Chrysler"
+              ]
+            },
+            {
+              "p": [
+                "GM"
+              ]
+            },
+            {
+              "p": [
+                "Subaru"
+              ]
+            },
+            {
+              "p": [
+                "Kenmore"
+              ]
+            },
+            {
+              "p": [
+                "Target"
+              ]
+            },
+            {
+              "p": [
+                "Toyota"
+              ]
+            },
+            {
+              "p": [
+                "Nissan"
+              ]
+            },
+            {
+              "p": [
+                "Honda"
+              ]
+            },
+            {
+              "p": [
+                "Lincoln"
+              ]
+            },
+            {
+              "p": [
+                "Dr. Pepper"
+              ]
+            },
+            {
+              "p": [
+                "Coca Cola"
+              ]
+            },
+            {
+              "p": [
+                "Miller"
+              ]
+            },
+            {
+              "p": [
+                "Bally"
+              ]
+            },
+            {
+              "p": [
+                "Planet Green"
+              ]
+            },
+            {
+              "p": [
+                "Pizza Hut"
+              ]
+            },
+            {
+              "p": [
+                "Verizon"
+              ]
+            },
+            {
+              "p": [
+                "At&amp;t"
+              ]
+            },
+            {
+              "p": [
+                "Sears"
+              ]
+            },
+            {
+              "p": [
+                "Canon"
+              ]
+            },
+            {
+              "p": [
+                "Lancome"
+              ]
+            },
+            {
+              "p": [
+                "Gillette"
+              ]
+            },
+            {
+              "p": [
+                "JC Penney"
+              ]
+            },
+            {
+              "p": [
+                "Di Giorno"
+              ]
+            },
+            {
+              "p": [
+                "Gatorade"
+              ]
+            },
+            {
+              "p": [
+                "LG Electronics"
+              ]
+            },
+            {
+              "p": [
+                "Chevron"
+              ]
+            },
+            {
+              "p": [
+                "Clinique"
+              ]
+            },
+            {
+              "p": [
+                "Suzuki"
+              ]
+            },
+            {
+              "p": [
+                "Hefty"
+              ]
+            },
+            {
+              "p": [
+                "Mc Donalds"
+              ]
+            },
+            {
+              "p": [
+                "Sharps"
+              ]
+            },
+            {
+              "p": [
+                "Texaco"
+              ]
+            },
+            {
+              "p": [
+                "Best Buy"
+              ]
+            },
+            {
+              "p": [
+                "Kia"
+              ]
+            },
+            {
+              "p": [
+                "Chevrolet"
+              ]
+            },
+            {
+              "p": [
+                "Tylenol"
+              ]
+            },
+            {
+              "p": [
+                "Infinity"
+              ]
+            },
+            {
+              "p": [
+                "Sylvania"
+              ]
+            },
+            {
+              "p": [
+                "Disney Land"
+              ]
+            },
+            {
+              "p": [
+                "ETC"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
