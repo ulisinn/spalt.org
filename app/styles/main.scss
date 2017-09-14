@@ -1,0 +1,26 @@
+@import 'reset';
+@import 'fonts';
+@import 'media_queries';
+
+@include fontFace('AllerBold', '../fonts/Aller_Bd');
+@include fontFace('AllerReg', '../fonts/Aller_Rg');
+
+$AllerBold: 'AllerBold', Helvetica, Arial, sans-serif;
+$AllerReg: 'AllerReg', Helvetica, Arial, sans-serif;
+
+
+body {
+  background: white;
+  font-family: $AllerReg;
+  font-size: 100%;
+}
+
+.hello {
+  color: red;
+}
+
+.icon {
+  color: red;
+  fontSize: 2em;
+  padding: 0.5em;
+}
