@@ -41,62 +41,62 @@
       "items": [
         {
           "title": "Heartgard",
-          "thumbnail": "thumbnail/Iheartguard.jpg",
+          "image": "thumbnail/Iheartguard.jpg",
           "video": "video/Iheartguard.mp4"
         },
         {
           "title": "Blesomra",
-          "thumbnail": "thumbnail/belsomra.jpg",
+          "image": "thumbnail/belsomra.jpg",
           "video": "video/belsomra.mp4"
         },
         {
           "title": "Bank Of America",
-          "thumbnail": "thumbnail/BofA.jpg",
+          "image": "thumbnail/BofA.jpg",
           "video": "video/BofA.mp4"
         },
         {
           "title": "Chevy Cruze",
-          "thumbnail": "thumbnail/ChevyCruze.jpg",
+          "image": "thumbnail/ChevyCruze.jpg",
           "video": "video/ChevyCruze.mp4"
         },
         {
           "title": "Di Giorno",
-          "thumbnail": "thumbnail/DiGiorno.jpg",
+          "image": "thumbnail/DiGiorno.jpg",
           "video": "video/DiGiorno.mp4"
         },
         {
           "title": "Audi",
-          "thumbnail": "thumbnail/Audi.jpg",
+          "image": "thumbnail/Audi.jpg",
           "video": "video/Audi.mp4"
         },
         {
           "title": "Infinity",
-          "thumbnail": "thumbnail/infinity.jpg",
+          "image": "thumbnail/infinity.jpg",
           "video": "video/infinity.mp4"
         },
         {
           "title": "Turbo Tax",
-          "thumbnail": "thumbnail/turbo_tax.jpg",
+          "image": "thumbnail/turbo_tax.jpg",
           "video": "video/turbo_tax.mp4"
         },
         {
           "title": "McDonalds",
-          "thumbnail": "thumbnail/McDonalds.jpg",
+          "image": "thumbnail/McDonalds.jpg",
           "video": "video/McDonalds.mp4"
         },
         {
           "title": "Sprint",
-          "thumbnail": "thumbnail/Sprint_NeverChange_30.jpg",
+          "image": "thumbnail/Sprint_NeverChange_30.jpg",
           "video": "video/Sprint_NeverChange_30.mp4"
         },
         {
           "title": "Telemundo",
-          "thumbnail": "thumbnail/telemundo.jpg",
+          "image": "thumbnail/telemundo.jpg",
           "video": "video/telemundo.mp4"
         },
         {
           "title": "VW",
-          "thumbnail": "thumbnail/VW.jpg",
+          "image": "thumbnail/VW.jpg",
           "video": "video/VW.mp4"
         }
       ]
@@ -318,6 +318,167 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "path": "reels",
+      "items": [
+        {
+          "label": "The Narrative Reel",
+          "video": "video/NarrativeReel.mp4"
+        },
+        {
+          "label": "The Commercial Reel",
+          "video": "video/CommercialReel.mp4"
+        }
+      ]
+    },
+    {
+      "path": "slideshow",
+      "items": [
+        {
+          "image": "images/slideshow/agassi.jpg"
+        },
+        {
+          "image": "images/slideshow/casino.jpg"
+        },
+        {
+          "image": "images/slideshow/cross.jpg"
+        },
+        {
+          "image": "images/slideshow/cross2.jpg"
+        },
+        {
+          "image": "images/slideshow/desertbefore.jpg"
+        },
+        {
+          "image": "images/slideshow/desertdayafter.jpg"
+        },
+        {
+          "image": "images/slideshow/deserttalent.jpg"
+        },
+        {
+          "image": "images/slideshow/dinner.jpg"
+        },
+        {
+          "image": "images/slideshow/eva.jpg"
+        },
+        {
+          "image": "images/slideshow/eva2.jpg"
+        },
+        {
+          "image": "images/slideshow/fishbait.jpg"
+        },
+        {
+          "image": "images/slideshow/gatorade.jpg"
+        },
+        {
+          "image": "images/slideshow/gatorade2.jpg"
+        },
+        {
+          "image": "images/slideshow/gatorade3.jpg"
+        },
+        {
+          "image": "images/slideshow/island.jpg"
+        },
+        {
+          "image": "images/slideshow/islandparamount.jpg"
+        },
+        {
+          "image": "images/slideshow/jeanne.jpg"
+        },
+        {
+          "image": "images/slideshow/jeanne_belle.jpg"
+        },
+        {
+          "image": "images/slideshow/jeanne2.jpg"
+        },
+        {
+          "image": "images/slideshow/kenmore_3.jpg"
+        },
+        {
+          "image": "images/slideshow/kenmore_4.jpg"
+        },
+        {
+          "image": "images/slideshow/kenmore_6.jpg"
+        },
+        {
+          "image": "images/slideshow/kenmore.jpg"
+        },
+        {
+          "image": "images/slideshow/kenmore2.jpg"
+        },
+        {
+          "image": "images/slideshow/livingroom.jpg"
+        },
+        {
+          "image": "images/slideshow/melbourne.jpg"
+        },
+        {
+          "image": "images/slideshow/melbourne2.jpg"
+        },
+        {
+          "image": "images/slideshow/melbourne3.jpg"
+        },
+        {
+          "image": "images/slideshow/milan.jpg"
+        },
+        {
+          "image": "images/slideshow/moon.jpg"
+        },
+        {
+          "image": "images/slideshow/moon2.jpg"
+        },
+        {
+          "image": "images/slideshow/oservatory.jpg"
+        },
+        {
+          "image": "images/slideshow/panasonic.jpg"
+        },
+        {
+          "image": "images/slideshow/pinochio.jpg"
+        },
+        {
+          "image": "images/slideshow/pinochio2.jpg"
+        },
+        {
+          "image": "images/slideshow/pinochio3.jpg"
+        },
+        {
+          "image": "images/slideshow/roulette.jpg"
+        },
+        {
+          "image": "images/slideshow/studio.jpg"
+        }
+      ]
+    },
+    {
+      "path": "about",
+      "items": [
+        {
+          "label": "Keywords:",
+          "description": "PRODUCTION DESIGN, COMMERCIALS, FILMS & MUSIC VIDEOS, VISUALIZATION OF PROJECTS, CONCEPT, LOCATION SCOUTING, BUDGETING & MANAGING ART DEPARTMENT, PRESENTATION, PLANNING, DESIGNING & BUILDING OF SETS AND SHOTS, FX-TECHNOLOGIES AND MINATURES, ADAPTATIONS OF LOCATIONS, FABRICATION OF PROPS"
+        },
+        {
+          "label": "Background:",
+          "description": "ARCHITECTURE, PHOTOGRAPHY, INTERIOR DESIGN"
+        },
+        {
+          "label": "Experience:",
+          "description": "NATIONAL AND INTERNATIONAL COMMERCIALS, MUSIC VIDEOS, TV-MOVIES, SHORTS AND FEATURES. LOCAL OR REPEATED WORK EXPERIENCES IN LOS ANGELES, NEW YORK, CHICAGO, MIAMI"
+        },
+        {
+          "label": "Internationally:",
+          "description": "AUSTRALIA, CANADA, CARIBBEAN, SOUTH AFRICA, ITALY, GERMANY, AUSTRIA, CZECH REPUBLIC, SPAIN, ARGENTINA, URUGUAY, UNITED KINGDOM"
+        },
+        {
+          "label": "Related Skills:",
+          "description": "FLUENT IN ENGLISH, GERMAN, ITALIAN AND FRENCH — CONVERSATIONAL SPANISH — DUAL CITIZEN — AUSTRIAN\AMERICAN"
+        },
+        {
+          "label": "Awards:",
+          "description": "GOLDEN CLIO, NEW YORK FILM FEST WINNER, VARIOUS SHORT LISTS"
         }
       ]
     }

@@ -1,14 +1,11 @@
 const express = require('express');
 const fs = require('fs');
 
-// init the app
 const app = express();
 
-// setup static files, server browser.js (webpacked file) from root
 app.use(express.static(__dirname));
 
 app.get('/data', (req, res) => {
-  // Read and open the recipes json file
   fs.readFile(`${__dirname}/data/data.json`, 'utf8', (err, data) => {
 
     // Error handling - return an error
