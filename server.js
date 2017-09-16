@@ -1,9 +1,11 @@
 const express = require('express');
 const fs = require('fs');
+const cors = require('cors');
 
 const app = express();
-
+app.use(cors());
 app.use(express.static(__dirname));
+app.options('*', cors());
 
 app.get('/data', (req, res) => {
   fs.readFile(`${__dirname}/data/data.json`, 'utf8', (err, data) => {
@@ -13,8 +15,8 @@ app.get('/data', (req, res) => {
       res.status(500).end();
       return console.error(err);
     }
-    let recipes = JSON.parse(data);
-    res.status(200).send({recipes});
+    let portfolio = JSON.parse(data);
+    res.status(200).send({portfolio});
 
   });
 });

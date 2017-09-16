@@ -35,7 +35,8 @@ const commonConfig = merge([
       // name: '[name].[hash:8].[ext]',
     },
   }),
-  parts.loadJavaScript({ include: PATHS.app }),
+  // parts.loadJavaScript({ include: PATHS.app }),
+  parts.loadTypeScript({ include: PATHS.app }),
 
 ]);
 
@@ -127,7 +128,9 @@ const developmentConfig = merge([
     host: process.env.HOST,
     port: process.env.PORT,
   }),
-  parts.loadCSS({include: PATHS.app}),
+  // parts.loadCSS({include: PATHS.app}),
+  parts.loadCssTypescript({include: PATHS.app}),
+
   parts.loadFontAwesome({exclude: PATHS.app}),
   parts.loadImages(),
 ]);

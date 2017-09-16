@@ -8,6 +8,65 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const cssnano = require('cssnano');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+// TYPESCRIPT
+
+exports.lintTypeScript = ({include, exclude, options}) => ({
+    module: {
+      rules: [
+        {
+          test: /\.(ts|tsx)$/,
+          include,
+          exclude,
+          enforce: 'pre',
+          loader: 'tslint-loader',
+          options,
+        },
+      ],
+    },
+  }
+);
+
+exports.loadTypeScript = ({include, exclude}) => ({
+    module: {
+      rules: [
+        {
+          test: /\.(ts|tsx|js|jsx)?$/,
+          include,
+          exclude,
+          loader: 'awesome-typescript-loader',
+        },
+      ],
+    },
+    resolve: {
+      extensions: ['.webpack.js', '.web.js', '.ts', '.tsx', '.js', '.jsx'],
+    },
+  }
+);
+
+
+exports.loadCssTypescript = ({include, exclude} = {}) => ({
+  module: {
+    rules: [
+      {
+        test: /\.(css|scss)$/,
+        include,
+        exclude,
+        use: ['style-loader',
+          {
+            loader: 'typings-for-css-modules-loader',
+            options: {
+              modules: true,
+              namedExport: true
+            },
+          },
+          'sass-loader'],
+      },
+    ],
+  },
+});
+
+//typings-for-css-modules-loader
+
 // DEV-SERVER
 exports.devServer = ({host, port} = {}) => ({
   devServer: {
@@ -41,7 +100,7 @@ exports.lintJavaScript = ({include, exclude, options}) => ({
 
 // LOAD CSS - DEV
 
-exports.loadFontAwesome = ({ include, exclude } = {}) => ({
+exports.loadFontAwesome = ({include, exclude} = {}) => ({
   module: {
     rules: [
       {
@@ -49,7 +108,7 @@ exports.loadFontAwesome = ({ include, exclude } = {}) => ({
         include,
         exclude,
 
-        use: ['style-loader', 'css-loader','sass-loader'],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },

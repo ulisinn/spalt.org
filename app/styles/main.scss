@@ -8,11 +8,42 @@
 $AllerBold: 'AllerBold', Helvetica, Arial, sans-serif;
 $AllerReg: 'AllerReg', Helvetica, Arial, sans-serif;
 
-
 body {
   background: white;
   font-family: $AllerReg;
   font-size: 100%;
+}
+
+:global {
+  .root {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+    max-width: 960px;
+    height: 100vh;
+  }
+  .container {
+    width: 95%;
+    height: 500px;
+    //border: 1px solid grey;
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+  }
+  .siteContainer {
+    display: flex;
+    flex-flow: column;
+
+    flex: 1 1 auto;
+  }
+  .contentContainer {
+    flex: 1 1 auto;
+    background: lightgrey;
+    margin-top: 5px;
+  }
 }
 
 .hello {
@@ -23,4 +54,26 @@ body {
   color: red;
   fontSize: 2em;
   padding: 0.5em;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: stretch;
+  //justify-content: space-between;
+}
+
+.navItem {
+  font-size: 8pt;
+  text-align: right;
+  padding: 3px;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  margin-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  height: 11px;
 }
