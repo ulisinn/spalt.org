@@ -22,6 +22,7 @@ yarn-error.log*
 
 # User-specific stuff:
 .idea/
-thumbnail/
-video/
-slideshow/
+
+/slideshow/
+/images/
+/video/
