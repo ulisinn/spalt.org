@@ -18,6 +18,7 @@ export const RouteMap = () => {
             <div className={'contentContainer'}>
                 <Switch>
                     <Route path="/" exact component={CommercialsView}/>
+                    <Route path="/commercials" exact component={CommercialsView}/>
                     <Route path="/projects" exact component={ProjectsView}/>
                     <Route path="/reels" exact component={ReelsView}/>
                     <Route path="/slideshow" exact component={SlideShowView}/>

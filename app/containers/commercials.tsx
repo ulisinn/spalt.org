@@ -1,9 +1,10 @@
 import * as React from 'react';
 import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
-import {updateNavigation} from "../actions/index";
+import {url} from '../store'
+import CommercialsItem from '../components/commercialsThumbnail'
+import * as styles from '../styles/main.scss';
 
-class CommercialsView extends React.Component <{}> {
+class CommercialsView extends React.Component <any, any> {
     constructor(props) {
         super(props);
     }
@@ -16,28 +17,43 @@ class CommercialsView extends React.Component <{}> {
 
     }
 
+
     render() {
-        // console.log('COMMERCIALS', this.props);
-        return <div>
-            <h2>CommercialsView</h2>
+        const {commercials, location} = this.props;
+        const commercialCompoent = this.getThumbnailComponent(commercials);
+        console.log('COMMERCIALS', commercials);
+        return <div id={'commercials'} className={styles.commercialsView}>
+            <div id={'commercialThumbnails'} className={styles.commercialThumbnails}>{commercialCompoent}</div>
+            <div id={'commercialsFooter'}>{'footer'}</div>
         </div>;
+    }
+
+    getThumbnailComponent(commercials: Array<any>) {
+        /*
+            label: string,
+    index: number,
+    image: string,
+    video: string,
+    getVideo: any
+         */
+        return commercials.map((d, i) => {
+            return <CommercialsItem key={i} label={d.title} image={d.image} video={d.video}
+                                    getVideo={() => this.getVideo(url)}/>
+        })
+    };
+
+    getVideo(url: string) {
+        console.log('get video')
     }
 }
 
 
-const mapStateToProps = ({portfolio, navigation}) => {
-
+const mapStateToProps = ({content}) => {
     return {
-        portfolio
+        commercials: (content[0]) ? content[0].items : []
     };
 };
 
-function mapDispatchToProps(dispatch) {
-    return bindActionCreators(updateNavigation, dispatch);
-}
-
-
 export default connect(
     mapStateToProps,
-    mapDispatchToProps,
 )(CommercialsView);

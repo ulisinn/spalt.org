@@ -1,23 +1,23 @@
 {
   "header": [
     {
-      "path": "commercials",
+      "path": "/commercials",
       "label": "commercials"
     },
     {
-      "path": "projects",
+      "path": "/projects",
       "label": "projects + credits"
     },
     {
-      "path": "reels",
+      "path": "/reels",
       "label": "reels"
     },
     {
-      "path": "slideshow",
+      "path": "/slideshow",
       "label": "slide show"
     },
     {
-      "path": "about",
+      "path": "/about",
       "label": "about"
     }
   ],

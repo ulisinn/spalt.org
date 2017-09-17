@@ -10,7 +10,7 @@ export default class ReelsView extends React.Component<{}, ReelsState> {
     }
 
     render() {
-        return <div>
+        return <div id={'reels'}>
             <h2>ReelsView</h2>
         </div>;
     }

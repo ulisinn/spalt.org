@@ -3,6 +3,7 @@ import thunk from 'redux-thunk';
 import rootReducer from '../reducers/index';
 import {getRemoteData} from '../actions/index';
 
+export const url: string = 'http://localhost:3000/';
 
 const store = createStore(
     rootReducer,
@@ -10,14 +11,10 @@ const store = createStore(
     applyMiddleware(thunk)
 );
 
-/*store.subscribe(() => (
-    // Log the state whenever the store changes.
-    console.log(store.getState()
-    );*/
+const data: string = `${url}data/`;
 
-const url: string = 'http://localhost:3000/data/';
-
-store.dispatch(getRemoteData(url));
+console.log('data', data);
+store.dispatch(getRemoteData(data));
 
 
 export default store;

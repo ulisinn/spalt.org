@@ -36,9 +36,10 @@ const setNavigation = (state = {currentNavigation: {}}, action: IAction) => {
                 ...action.payload,
             };
         case ActionTypes.SET_CURRENT_NAVIGATION:
+            console.log('setNavigation', state, action)
             return {
                 ...state,
-                ...action.payload,
+                currentNavigation: action.payload,
             };
 
         default:

@@ -10,7 +10,7 @@ export default class ProjectsView extends React.Component<Props, {}> {
     }
 
     render() {
-        return <div>
+        return <div id={'projects'}>
             <h2>ProjectsView</h2>
         </div>;
     }

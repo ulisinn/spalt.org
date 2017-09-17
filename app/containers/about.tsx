@@ -10,7 +10,7 @@ export default class AboutView extends React.Component<{}, AboutState> {
     }
 
     render() {
-        return <div>
+        return <div id={'about'}>
             <h2>AboutView</h2>
         </div>;
     }

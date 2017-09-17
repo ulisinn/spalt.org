@@ -10,14 +10,13 @@ export const initNavigation = (data: any) => {
         },
     };
 };
-export const updateNavigation = (data: any) => (
-    {
-        type: ActionTypes.SET_CURRENT_NAVIGATION,
-        payload: {
-            data,
-        }
+export const updateNavigation = (data: any) => {
+    console.log('updateNavigation', data)
+
+    return {
+        type: ActionTypes.INIT_NAVIGATION,
     }
-);
+}
 
 //
 

@@ -6,7 +6,7 @@ export default class SlideShowView extends React.Component<{}> {
     }
 
     render() {
-        return <div>
+        return <div id={'slideshow'}>
             <h2>SlideShowView</h2>
         </div>;
     }
