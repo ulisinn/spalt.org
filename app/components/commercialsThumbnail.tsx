@@ -11,10 +11,14 @@ interface CommercialItemsProps {
 
 
 const CommercialsItem: React.SFC<CommercialItemsProps> = ({label, image, video, getVideo}) => {
-    return <div className={styles.commercialsThumbnailItem} onClick={() => getVideo(video)}>
-        <img src={`${url}${image}`}/>
-        <p>{label}</p>
-    </div>;
+    return (
+        <div>
+            <div className={styles.commercialsThumbnailItem} onClick={() => getVideo(video)}>
+                <img src={`${url}${image}`}/>
+                <p>{label}</p>
+            </div>
+        </div>
+    );
 };
 
 export default CommercialsItem;

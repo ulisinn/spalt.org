@@ -29,21 +29,20 @@ class CommercialsView extends React.Component <any, any> {
     }
 
     getThumbnailComponent(commercials: Array<any>) {
-        /*
-            label: string,
-    index: number,
-    image: string,
-    video: string,
-    getVideo: any
-         */
         return commercials.map((d, i) => {
-            return <CommercialsItem key={i} label={d.title} image={d.image} video={d.video}
-                                    getVideo={() => this.getVideo(url)}/>
+            console.log(d.video);
+            const item = (<CommercialsItem
+                key={i}
+                label={d.title}
+                image={d.image}
+                video={d.video}
+                getVideo={(vid) => this.getVideo(vid)}/>);
+            return item;
         })
     };
 
-    getVideo(url: string) {
-        console.log('get video')
+    getVideo(vid: string) {
+        console.log('get video', `${url}${vid}`)
     }
 }
 

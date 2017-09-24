@@ -8,115 +8,203 @@
 $AllerBold: 'AllerBold', Helvetica, Arial, sans-serif;
 $AllerReg: 'AllerReg', Helvetica, Arial, sans-serif;
 
-body {
-  background: white;
-  font-family: $AllerReg;
-  font-size: 100%;
-}
-
 :global {
+  box-sizing: border-box;
+  font-size: calc(1vw + 0.6em);
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    background: white;
+    font-family: $AllerReg;
+    font-size: 100%;
+  }
+
   .root {
+    //border: 1px solid red;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 
     margin: 0 auto;
     max-width: 960px;
     height: 100vh;
+
+    @include mq('tablet') {
+      align-items: center;
+      justify-content: center;
+    }
   }
   .container {
-    width: 95%;
-    height: 500px;
-    //border: 1px solid grey;
+    width: 100%;
     display: flex;
     flex-flow: column;
     align-items: stretch;
-  }
-  .siteContainer {
-    display: flex;
-    flex-flow: column;
-
-    flex: 1 1 auto;
-  }
-  .contentContainer {
-    flex: 1 1 auto;
+    height: 100vh;
     background: lightgrey;
-    margin-top: 5px;
+    @include mq('tablet') {
+      height: 500px;
+    }
   }
-}
+  /*  .siteContainer {
+      display: flex;
+      flex-flow: column;
 
-.hello {
-  color: red;
-}
-
-.icon {
-  color: red;
-  fontSize: 2em;
-  padding: 0.5em;
+      flex: 1 1 auto;
+    }
+    .contentContainer {
+      flex: 1 1 auto;
+      background: lightgrey;
+      margin-top: 5px;
+    }*/
 }
 
 .navContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   align-content: stretch;
-  //justify-content: space-between;
+  justify-content: space-between;
+
+  :last-child {
+    border-right: none;
+
+  }
+  /*
+  @include mq('phone') {
+    border-bottom: none;
+  }
+  */
+
+  @include mq('tablet') {
+    flex-direction: row;
+  }
+}
+
+.isOpen {
+  display: block !important;
 }
 
 .navItem {
-  font-size: 10pt;
-  text-align: right;
-  padding: 3px;
-  background: black;
   color: rgb(155, 166, 70);
-  text-transform: uppercase;
-  width: 100%;
-  margin-left: 5px;
-  padding-top: 4px;
-  padding-right: 5px;
-  height: 12px;
+  background: black;
+  border-bottom: 1px solid white;
 
+  /*  font-size: 10pt;
+    padding: 3px;
+    text-transform: uppercase;
+    width: 100%;
+    margin-left: 5px;
+    padding-top: 4px;
+    padding-right: 5px;
+    height: 12px;*/
+  padding: 0.2em 0.5em;
+  display: none;
+  align-self: stretch;
+  flex-grow: 1;
+
+  @include mq('tablet') {
+    border-bottom-width: 3px;
+    border-right: 5px solid white;
+    text-align: right;
+    width: auto;
+    display: inline-block;
+  }
+
+  a {
+    font-size: calc(1vw + 0.6em);
+    color: white;
+    text-decoration: none;
+    @include mq('tablet') {
+      font-size: 1rem;
+    }
+  }
+}
+
+.navButton {
+  display: block;
+  width: 100%;
+  font-size: 2em;
+  background-color: black;
+  color: white;
+  text-align: right;
+  //padding: 0.5em;
+  //padding-right: 0;
+  @include mq('tablet') {
+    display: none;
+  }
 }
 
 .navItemLink {
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 8pt;
-  text-align: right;
-  padding: 3px;
-  background: black;
-  color: white;
-  text-transform: uppercase;
-  width: 100%;
-  margin-left: 5px;
-  padding-top: 5px;
-  padding-right: 5px;
-  height: 11px;
+
+  /*  cursor: pointer;
+    text-decoration: none;
+    font-size: 8pt;
+    text-align: right;
+    padding: 3px;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    height: 11px;*/
 }
 
 .commercialsView {
-  height: 470px;
-  overflow: hidden;
+  //border: 1px solid red;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+
+  @include mq('tablet') {
+    height: 470px;
+  }
 }
 
 .commercialThumbnails {
   display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  //justify-content: space-evenly;
+  flex-grow: 0.8;
+
+  @include mq('phone-wide') {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+  }
 }
 
 .commercialsThumbnailItem {
+  //border: 1px solid green;
   color: black;
   font-size: 8pt;
   text-align: center;
-  padding-left: 4em;
-  padding-right: 4em;
+  padding-left: 2em;
+  padding-right: 2em;
   margin-top: 1em;
   p {
     margin-top: 0.5em;
+  }
+
+  @include mq('tablet') {
+    padding-left: 2.2em;
+    padding-right: 2.2em;
+  }
+  @include mq('tablet-medium') {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  @include mq('tablet-wide') {
+    padding-left: 4em;
+    padding-right: 4em;
   }
 }

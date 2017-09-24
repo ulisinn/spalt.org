@@ -1,6 +1,5 @@
 import * as React from 'react'
 import {render} from 'react-dom';
-import {AppContainer} from 'react-hot-loader'
 
 import * as redux from 'redux';
 import {Provider} from 'react-redux';
